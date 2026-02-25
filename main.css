@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    border: 0;
+}
+
+.container {
+    display: block;
+    background-color: #1E1E1E;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cams_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    padding: 5em 5vw;
+}
+
+.cam_box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #383838;
+    min-width: 20vw;
+    min-height: 20vh;
+}
+
+.toolbar {
+    background-color: #2A2A2A;
+}
+
+
