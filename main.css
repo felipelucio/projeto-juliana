@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -10,25 +11,56 @@ html, body {
     height: 100vh;
 }
 
+.title {
+    height: 5vh;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 0.5em 0;
+    color: #7F7F7F;
+    background-color: #2A2A2A;
+}
+
 .cams_container {
+    height: 85vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
-
-    padding: 5em 5vw;
+    gap: 1em;
 }
 
 .cam_box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #383838;
-    min-width: 20vw;
-    min-height: 20vh;
+    width: 30vw;
+    height: 60vh;
+}
+
+.cam_box.big {
+    width: 35vw;
+    height: 70vh;
+}
+
+.cam_box.small {
+    width: 15vw;
+    height: 30vh;
+}
+
+.user_name {
+    color: #7F7F7F;
+    padding: 0.5em;
+    font-weight: bold;
+    z-index: 10;
 }
 
 .toolbar {
+    height: 10vh;
     background-color: #2A2A2A;
+    background-image: url("imgs/buttons.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
