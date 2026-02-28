@@ -31,6 +31,7 @@ html, body {
 }
 
 .cam_box {
+    position: relative;
     border-radius: 8px;
     background-color: #383838;
     width: 30vw;
@@ -48,9 +49,20 @@ html, body {
 }
 
 .user_name {
+    position: absolute;
+    left: 0;
+    top: 0;
     color: #7F7F7F;
-    padding: 0.5em;
     font-weight: bold;
+    z-index: 10;
+    padding: 0.5em 0.7em;
+    background-color: #383838;
+    border-radius: 8px 0 8px 0;
+}
+
+.mic-icon {
+    position: absolute;
+    bottom: 0;
     z-index: 10;
 }
 

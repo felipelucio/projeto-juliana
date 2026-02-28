@@ -5,7 +5,7 @@ const video_list = {
 }
 
 const stopCam = () => {
-    const video = document.getElementById('video');
+    const video = document.getElementById('cam-video');
     const stream = video.srcObject;
     const tracks = stream.getTracks();
     tracks.forEach(track => track.stop());
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         i_box.classList.add('big');
     }
 
-    let video_el = document.getElementById('cam-video');
+    let video_el = document.getElementById('video');
     let video_src = document.createElement('source');
     video_src.setAttribute('src', video_file)
     video_src.setAttribute('type', 'video/mp4');
