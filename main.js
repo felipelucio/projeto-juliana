@@ -13,7 +13,7 @@ const stopCam = () => {
 };
 
 const startCam = () => {
-    const video = document.getElementById('video');
+    const video = document.getElementById('cam-video');
     if (navigator.mediaDevices.getUserMedia && navigator.mediaDevices.getUserMedia({ video: true })) {
         navigator.mediaDevices.getUserMedia({ video: true })
             .then(stream => {
